@@ -1,0 +1,448 @@
+[
+    {
+        "id": "1",
+        "title": "Two Sum",
+        "difficulty": "Easy",
+        "likes": 60054,
+        "dislikes": 2151,
+        "tags": [
+            "Array",
+            "Hash Table"
+        ],
+        "description": "Given an array of integers nums\u00a0and an integer target, return indices of the two numbers such that they add up to target.\nYou may assume that each input would have exactly one solution, and you may not use the same element twice.\nYou can return the answer in any order.\n\u00a0\nExample 1:\n\nInput: nums = [2,7,11,15], target = 9\nOutput: [0,1]\nExplanation: Because nums[0] + nums[1] == 9, we return [0, 1].\n\nExample 2:\n\nInput: nums = [3,2,4], target = 6\nOutput: [1,2]\n\nExample 3:\n\nInput: nums = [3,3], target = 6\nOutput: [0,1]\n\n\u00a0\nConstraints:\n\n2 <= nums.length <= 104\n-109 <= nums[i] <= 109\n-109 <= target <= 109\nOnly one valid answer exists.\n\n\u00a0\nFollow-up:\u00a0Can you come up with an algorithm that is less than O(n2)\u00a0time complexity?",
+        "accessible": true,
+        "slug": "two-sum"
+    },
+    {
+        "id": "217",
+        "title": "Contains Duplicate",
+        "difficulty": "Easy",
+        "likes": 12555,
+        "dislikes": 1319,
+        "tags": [
+            "Array",
+            "Hash Table",
+            "Sorting"
+        ],
+        "description": "Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.\n\u00a0\nExample 1:\n\nInput: nums = [1,2,3,1]\nOutput: true\nExplanation:\nThe element 1 occurs at the indices 0 and 3.\n\nExample 2:\n\nInput: nums = [1,2,3,4]\nOutput: false\nExplanation:\nAll elements are distinct.\n\nExample 3:\n\nInput: nums = [1,1,1,3,3,4,3,2,4,2]\nOutput: true\n\n\u00a0\nConstraints:\n\n1 <= nums.length <= 105\n-109 <= nums[i] <= 109\n\n",
+        "accessible": true,
+        "slug": "contains-duplicate"
+    },
+    {
+        "id": "238",
+        "title": "Product of Array Except Self",
+        "difficulty": "Medium",
+        "likes": 23590,
+        "dislikes": 1501,
+        "tags": [
+            "Array",
+            "Prefix Sum"
+        ],
+        "description": "Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].\nThe product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.\nYou must write an algorithm that runs in\u00a0O(n)\u00a0time and without using the division operation.\n\u00a0\nExample 1:\nInput: nums = [1,2,3,4]\nOutput: [24,12,8,6]\nExample 2:\nInput: nums = [-1,1,0,-3,3]\nOutput: [0,0,9,0,0]\n\n\u00a0\nConstraints:\n\n2 <= nums.length <= 105\n-30 <= nums[i] <= 30\nThe input is generated such that answer[i] is guaranteed to fit in a 32-bit integer.\n\n\u00a0\nFollow up:\u00a0Can you solve the problem in O(1)\u00a0extra\u00a0space complexity? (The output array does not count as extra space for space complexity analysis.)\n",
+        "accessible": true,
+        "slug": "product-of-array-except-self"
+    },
+    {
+        "id": "53",
+        "title": "Maximum Subarray",
+        "difficulty": "Medium",
+        "likes": 35082,
+        "dislikes": 1484,
+        "tags": [
+            "Array",
+            "Divide and Conquer",
+            "Dynamic Programming"
+        ],
+        "description": "Given an integer array nums, find the subarray with the largest sum, and return its sum.\n\u00a0\nExample 1:\n\nInput: nums = [-2,1,-3,4,-1,2,1,-5,4]\nOutput: 6\nExplanation: The subarray [4,-1,2,1] has the largest sum 6.\n\nExample 2:\n\nInput: nums = [1]\nOutput: 1\nExplanation: The subarray [1] has the largest sum 1.\n\nExample 3:\n\nInput: nums = [5,4,-1,7,8]\nOutput: 23\nExplanation: The subarray [5,4,-1,7,8] has the largest sum 23.\n\n\u00a0\nConstraints:\n\n1 <= nums.length <= 105\n-104 <= nums[i] <= 104\n\n\u00a0\nFollow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.\n",
+        "accessible": true,
+        "slug": "maximum-subarray"
+    },
+    {
+        "id": "15",
+        "title": "3Sum",
+        "difficulty": "Medium",
+        "likes": 32149,
+        "dislikes": 3015,
+        "tags": [
+            "Array",
+            "Two Pointers",
+            "Sorting"
+        ],
+        "description": "Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.\nNotice that the solution set must not contain duplicate triplets.\n\u00a0\nExample 1:\n\nInput: nums = [-1,0,1,2,-1,-4]\nOutput: [[-1,-1,2],[-1,0,1]]\nExplanation: \nnums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.\nnums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.\nnums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.\nThe distinct triplets are [-1,0,1] and [-1,-1,2].\nNotice that the order of the output and the order of the triplets does not matter.\n\nExample 2:\n\nInput: nums = [0,1,1]\nOutput: []\nExplanation: The only possible triplet does not sum up to 0.\n\nExample 3:\n\nInput: nums = [0,0,0]\nOutput: [[0,0,0]]\nExplanation: The only possible triplet sums up to 0.\n\n\u00a0\nConstraints:\n\n3 <= nums.length <= 3000\n-105 <= nums[i] <= 105\n\n",
+        "accessible": true,
+        "slug": "3sum"
+    },
+    {
+        "id": "128",
+        "title": "Longest Consecutive Sequence",
+        "difficulty": "Medium",
+        "likes": 20910,
+        "dislikes": 1099,
+        "tags": [
+            "Array",
+            "Hash Table",
+            "Union Find"
+        ],
+        "description": "Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.\nYou must write an algorithm that runs in\u00a0O(n)\u00a0time.\n\u00a0\nExample 1:\n\nInput: nums = [100,4,200,1,3,2]\nOutput: 4\nExplanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.\n\nExample 2:\n\nInput: nums = [0,3,7,2,5,8,4,6,0,1]\nOutput: 9\n\n\u00a0\nConstraints:\n\n0 <= nums.length <= 105\n-109 <= nums[i] <= 109\n\n",
+        "accessible": true,
+        "slug": "longest-consecutive-sequence"
+    },
+    {
+        "id": "242",
+        "title": "Valid Anagram",
+        "difficulty": "Easy",
+        "likes": 12689,
+        "dislikes": 420,
+        "tags": [
+            "Hash Table",
+            "String",
+            "Sorting"
+        ],
+        "description": "Given two strings s and t, return true if t is an anagram of s, and false otherwise.\n\u00a0\nExample 1:\n\nInput: s = \"anagram\", t = \"nagaram\"\nOutput: true\n\nExample 2:\n\nInput: s = \"rat\", t = \"car\"\nOutput: false\n\n\u00a0\nConstraints:\n\n1 <= s.length, t.length <= 5 * 104\ns and t consist of lowercase English letters.\n\n\u00a0\nFollow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?\n",
+        "accessible": true,
+        "slug": "valid-anagram"
+    },
+    {
+        "id": "49",
+        "title": "Group Anagrams",
+        "difficulty": "Medium",
+        "likes": 20019,
+        "dislikes": 666,
+        "tags": [
+            "Array",
+            "Hash Table",
+            "String",
+            "Sorting"
+        ],
+        "description": "Given an array of strings strs, group the anagrams together. You can return the answer in any order.\n\u00a0\nExample 1:\n\nInput: strs = [\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\nOutput: [[\"bat\"],[\"nat\",\"tan\"],[\"ate\",\"eat\",\"tea\"]]\nExplanation:\n\nThere is no string in strs that can be rearranged to form \"bat\".\nThe strings \"nat\" and \"tan\" are anagrams as they can be rearranged to form each other.\nThe strings \"ate\", \"eat\", and \"tea\" are anagrams as they can be rearranged to form each other.\n\n\nExample 2:\n\nInput: strs = [\"\"]\nOutput: [[\"\"]]\n\nExample 3:\n\nInput: strs = [\"a\"]\nOutput: [[\"a\"]]\n\n\u00a0\nConstraints:\n\n1 <= strs.length <= 104\n0 <= strs[i].length <= 100\nstrs[i] consists of lowercase English letters.\n\n",
+        "accessible": true,
+        "slug": "group-anagrams"
+    },
+    {
+        "id": "5",
+        "title": "Longest Palindromic Substring",
+        "difficulty": "Medium",
+        "likes": 30245,
+        "dislikes": 1862,
+        "tags": [
+            "Two Pointers",
+            "String",
+            "Dynamic Programming"
+        ],
+        "description": "Given a string s, return the longest palindromic substring in s.\n\u00a0\nExample 1:\n\nInput: s = \"babad\"\nOutput: \"bab\"\nExplanation: \"aba\" is also a valid answer.\n\nExample 2:\n\nInput: s = \"cbbd\"\nOutput: \"bb\"\n\n\u00a0\nConstraints:\n\n1 <= s.length <= 1000\ns consist of only digits and English letters.\n\n",
+        "accessible": true,
+        "slug": "longest-palindromic-substring"
+    },
+    {
+        "id": "76",
+        "title": "Minimum Window Substring",
+        "difficulty": "Hard",
+        "likes": 18500,
+        "dislikes": 766,
+        "tags": [
+            "Hash Table",
+            "String",
+            "Sliding Window"
+        ],
+        "description": "Given two strings s and t of lengths m and n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string \"\".\nThe testcases will be generated such that the answer is unique.\n\u00a0\nExample 1:\n\nInput: s = \"ADOBECODEBANC\", t = \"ABC\"\nOutput: \"BANC\"\nExplanation: The minimum window substring \"BANC\" includes 'A', 'B', and 'C' from string t.\n\nExample 2:\n\nInput: s = \"a\", t = \"a\"\nOutput: \"a\"\nExplanation: The entire string s is the minimum window.\n\nExample 3:\n\nInput: s = \"a\", t = \"aa\"\nOutput: \"\"\nExplanation: Both 'a's from t must be included in the window.\nSince the largest window of s only has one 'a', return empty string.\n\n\u00a0\nConstraints:\n\nm == s.length\nn == t.length\n1 <= m, n <= 105\ns and t consist of uppercase and lowercase English letters.\n\n\u00a0\nFollow up: Could you find an algorithm that runs in O(m + n) time?\n",
+        "accessible": true,
+        "slug": "minimum-window-substring"
+    },
+    {
+        "id": "792",
+        "title": "Binary Search",
+        "difficulty": "Easy",
+        "likes": 12325,
+        "dislikes": 264,
+        "tags": [
+            "Array",
+            "Binary Search"
+        ],
+        "description": "Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.\nYou must write an algorithm with O(log n) runtime complexity.\n\u00a0\nExample 1:\n\nInput: nums = [-1,0,3,5,9,12], target = 9\nOutput: 4\nExplanation: 9 exists in nums and its index is 4\n\nExample 2:\n\nInput: nums = [-1,0,3,5,9,12], target = 2\nOutput: -1\nExplanation: 2 does not exist in nums so return -1\n\n\u00a0\nConstraints:\n\n1 <= nums.length <= 104\n-104 < nums[i], target < 104\nAll the integers in nums are unique.\nnums is sorted in ascending order.\n\n",
+        "accessible": true,
+        "slug": "binary-search"
+    },
+    {
+        "id": "33",
+        "title": "Search in Rotated Sorted Array",
+        "difficulty": "Medium",
+        "likes": 27364,
+        "dislikes": 1660,
+        "tags": [
+            "Array",
+            "Binary Search"
+        ],
+        "description": "There is an integer array nums sorted in ascending order (with distinct values).\nPrior to being passed to your function, nums is possibly rotated at an unknown pivot index k (1 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2].\nGiven the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.\nYou must write an algorithm with O(log n) runtime complexity.\n\u00a0\nExample 1:\nInput: nums = [4,5,6,7,0,1,2], target = 0\nOutput: 4\nExample 2:\nInput: nums = [4,5,6,7,0,1,2], target = 3\nOutput: -1\nExample 3:\nInput: nums = [1], target = 0\nOutput: -1\n\n\u00a0\nConstraints:\n\n1 <= nums.length <= 5000\n-104 <= nums[i] <= 104\nAll values of nums are unique.\nnums is an ascending array that is possibly rotated.\n-104 <= target <= 104\n\n",
+        "accessible": true,
+        "slug": "search-in-rotated-sorted-array"
+    },
+    {
+        "id": "215",
+        "title": "Kth Largest Element in an Array",
+        "difficulty": "Medium",
+        "likes": 17601,
+        "dislikes": 919,
+        "tags": [
+            "Array",
+            "Divide and Conquer",
+            "Sorting",
+            "Heap (Priority Queue)",
+            "Quickselect"
+        ],
+        "description": "Given an integer array nums and an integer k, return the kth largest element in the array.\nNote that it is the kth largest element in the sorted order, not the kth distinct element.\nCan you solve it without sorting?\n\u00a0\nExample 1:\nInput: nums = [3,2,1,5,6,4], k = 2\nOutput: 5\nExample 2:\nInput: nums = [3,2,3,1,2,4,5,5,6], k = 4\nOutput: 4\n\n\u00a0\nConstraints:\n\n1 <= k <= nums.length <= 105\n-104 <= nums[i] <= 104\n\n",
+        "accessible": true,
+        "slug": "kth-largest-element-in-an-array"
+    },
+    {
+        "id": "56",
+        "title": "Merge Intervals",
+        "difficulty": "Medium",
+        "likes": 22887,
+        "dislikes": 829,
+        "tags": [
+            "Array",
+            "Sorting"
+        ],
+        "description": "Given an array\u00a0of intervals\u00a0where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.\n\u00a0\nExample 1:\n\nInput: intervals = [[1,3],[2,6],[8,10],[15,18]]\nOutput: [[1,6],[8,10],[15,18]]\nExplanation: Since intervals [1,3] and [2,6] overlap, merge them into [1,6].\n\nExample 2:\n\nInput: intervals = [[1,4],[4,5]]\nOutput: [[1,5]]\nExplanation: Intervals [1,4] and [4,5] are considered overlapping.\n\n\u00a0\nConstraints:\n\n1 <= intervals.length <= 104\nintervals[i].length == 2\n0 <= starti <= endi <= 104\n\n",
+        "accessible": true,
+        "slug": "merge-intervals"
+    },
+    {
+        "id": "206",
+        "title": "Reverse Linked List",
+        "difficulty": "Easy",
+        "likes": 22408,
+        "dislikes": 496,
+        "tags": [
+            "Linked List",
+            "Recursion"
+        ],
+        "description": "Given the head of a singly linked list, reverse the list, and return the reversed list.\n\u00a0\nExample 1:\n\n\nInput: head = [1,2,3,4,5]\nOutput: [5,4,3,2,1]\n\nExample 2:\n\n\nInput: head = [1,2]\nOutput: [2,1]\n\nExample 3:\n\nInput: head = []\nOutput: []\n\n\u00a0\nConstraints:\n\nThe number of nodes in the list is the range [0, 5000].\n-5000 <= Node.val <= 5000\n\n\u00a0\nFollow up: A linked list can be reversed either iteratively or recursively. Could you implement both?\n",
+        "accessible": true,
+        "slug": "reverse-linked-list"
+    },
+    {
+        "id": "21",
+        "title": "Merge Two Sorted Lists",
+        "difficulty": "Easy",
+        "likes": 22784,
+        "dislikes": 2223,
+        "tags": [
+            "Linked List",
+            "Recursion"
+        ],
+        "description": "You are given the heads of two sorted linked lists list1 and list2.\nMerge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.\nReturn the head of the merged linked list.\n\u00a0\nExample 1:\n\n\nInput: list1 = [1,2,4], list2 = [1,3,4]\nOutput: [1,1,2,3,4,4]\n\nExample 2:\n\nInput: list1 = [], list2 = []\nOutput: []\n\nExample 3:\n\nInput: list1 = [], list2 = [0]\nOutput: [0]\n\n\u00a0\nConstraints:\n\nThe number of nodes in both lists is in the range [0, 50].\n-100 <= Node.val <= 100\nBoth list1 and list2 are sorted in non-decreasing order.\n\n",
+        "accessible": true,
+        "slug": "merge-two-sorted-lists"
+    },
+    {
+        "id": "4",
+        "title": "Median of Two Sorted Arrays",
+        "difficulty": "Hard",
+        "likes": 29442,
+        "dislikes": 3309,
+        "tags": [
+            "Array",
+            "Binary Search",
+            "Divide and Conquer"
+        ],
+        "description": "Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.\nThe overall run time complexity should be O(log (m+n)).\n\u00a0\nExample 1:\n\nInput: nums1 = [1,3], nums2 = [2]\nOutput: 2.00000\nExplanation: merged array = [1,2,3] and median is 2.\n\nExample 2:\n\nInput: nums1 = [1,2], nums2 = [3,4]\nOutput: 2.50000\nExplanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.\n\n\u00a0\nConstraints:\n\nnums1.length == m\nnums2.length == n\n0 <= m <= 1000\n0 <= n <= 1000\n1 <= m + n <= 2000\n-106 <= nums1[i], nums2[i] <= 106\n\n",
+        "accessible": true,
+        "slug": "median-of-two-sorted-arrays"
+    },
+    {
+        "id": "98",
+        "title": "Validate Binary Search Tree",
+        "difficulty": "Medium",
+        "likes": 17314,
+        "dislikes": 1394,
+        "tags": [
+            "Tree",
+            "Depth-First Search",
+            "Binary Search Tree",
+            "Binary Tree"
+        ],
+        "description": "Given the root of a binary tree, determine if it is a valid binary search tree (BST).\nA valid BST is defined as follows:\n\nThe left subtree of a node contains only nodes with keys less than the node's key.\nThe right subtree of a node contains only nodes with keys greater than the node's key.\nBoth the left and right subtrees must also be binary search trees.\n\n\u00a0\nExample 1:\n\n\nInput: root = [2,1,3]\nOutput: true\n\nExample 2:\n\n\nInput: root = [5,1,4,null,null,3,6]\nOutput: false\nExplanation: The root node's value is 5 but its right child's value is 4.\n\n\u00a0\nConstraints:\n\nThe number of nodes in the tree is in the range [1, 104].\n-231 <= Node.val <= 231 - 1\n\n",
+        "accessible": true,
+        "slug": "validate-binary-search-tree"
+    },
+    {
+        "id": "102",
+        "title": "Binary Tree Level Order Traversal",
+        "difficulty": "Medium",
+        "likes": 15872,
+        "dislikes": 336,
+        "tags": [
+            "Tree",
+            "Breadth-First Search",
+            "Binary Tree"
+        ],
+        "description": "Given the root of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).\n\u00a0\nExample 1:\n\n\nInput: root = [3,9,20,null,null,15,7]\nOutput: [[3],[9,20],[15,7]]\n\nExample 2:\n\nInput: root = [1]\nOutput: [[1]]\n\nExample 3:\n\nInput: root = []\nOutput: []\n\n\u00a0\nConstraints:\n\nThe number of nodes in the tree is in the range [0, 2000].\n-1000 <= Node.val <= 1000\n\n",
+        "accessible": true,
+        "slug": "binary-tree-level-order-traversal"
+    },
+    {
+        "id": "543",
+        "title": "Diameter of Binary Tree",
+        "difficulty": "Easy",
+        "likes": 14411,
+        "dislikes": 1113,
+        "tags": [
+            "Tree",
+            "Depth-First Search",
+            "Binary Tree"
+        ],
+        "description": "Given the root of a binary tree, return the length of the diameter of the tree.\nThe diameter of a binary tree is the length of the longest path between any two nodes in a tree. This path may or may not pass through the root.\nThe length of a path between two nodes is represented by the number of edges between them.\n\u00a0\nExample 1:\n\n\nInput: root = [1,2,3,4,5]\nOutput: 3\nExplanation: 3 is the length of the path [4,2,1,3] or [5,2,1,3].\n\nExample 2:\n\nInput: root = [1,2]\nOutput: 1\n\n\u00a0\nConstraints:\n\nThe number of nodes in the tree is in the range [1, 104].\n-100 <= Node.val <= 100\n\n",
+        "accessible": true,
+        "slug": "diameter-of-binary-tree"
+    },
+    {
+        "id": "127",
+        "title": "Word Ladder",
+        "difficulty": "Hard",
+        "likes": 12501,
+        "dislikes": 1910,
+        "tags": [
+            "Hash Table",
+            "String",
+            "Breadth-First Search"
+        ],
+        "description": "A transformation sequence from word beginWord to word endWord using a dictionary wordList is a sequence of words beginWord -> s1 -> s2 -> ... -> sk such that:\n\nEvery adjacent pair of words differs by a single letter.\nEvery si for 1 <= i <= k is in wordList. Note that beginWord does not need to be in wordList.\nsk == endWord\n\nGiven two words, beginWord and endWord, and a dictionary wordList, return the number of words in the shortest transformation sequence from beginWord to endWord, or 0 if no such sequence exists.\n\u00a0\nExample 1:\n\nInput: beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]\nOutput: 5\nExplanation: One shortest transformation sequence is \"hit\" -> \"hot\" -> \"dot\" -> \"dog\" -> cog\", which is 5 words long.\n\nExample 2:\n\nInput: beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]\nOutput: 0\nExplanation: The endWord \"cog\" is not in wordList, therefore there is no valid transformation sequence.\n\n\u00a0\nConstraints:\n\n1 <= beginWord.length <= 10\nendWord.length == beginWord.length\n1 <= wordList.length <= 5000\nwordList[i].length == beginWord.length\nbeginWord, endWord, and wordList[i] consist of lowercase English letters.\nbeginWord != endWord\nAll the words in wordList are unique.\n\n",
+        "accessible": true,
+        "slug": "word-ladder"
+    },
+    {
+        "id": "480",
+        "title": "Sliding Window Median",
+        "difficulty": "Hard",
+        "likes": 3314,
+        "dislikes": 215,
+        "tags": [
+            "Array",
+            "Hash Table",
+            "Sliding Window",
+            "Heap (Priority Queue)"
+        ],
+        "description": "The median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle values.\n\nFor examples, if arr = [2,3,4], the median is 3.\nFor examples, if arr = [1,2,3,4], the median is (2 + 3) / 2 = 2.5.\n\nYou are given an integer array nums and an integer k. There is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position.\nReturn the median array for each window in the original array. Answers within 10-5 of the actual value will be accepted.\n\u00a0\nExample 1:\n\nInput: nums = [1,3,-1,-3,5,3,6,7], k = 3\nOutput: [1.00000,-1.00000,-1.00000,3.00000,5.00000,6.00000]\nExplanation: \nWindow position                Median\n---------------                -----\n[1  3  -1] -3  5  3  6  7        1\n 1 [3  -1  -3] 5  3  6  7       -1\n 1  3 [-1  -3  5] 3  6  7       -1\n 1  3  -1 [-3  5  3] 6  7        3\n 1  3  -1  -3 [5  3  6] 7        5\n 1  3  -1  -3  5 [3  6  7]       6\n\nExample 2:\n\nInput: nums = [1,2,3,4,2,3,1,4,2], k = 3\nOutput: [2.00000,3.00000,3.00000,3.00000,2.00000,3.00000,2.00000]\n\n\u00a0\nConstraints:\n\n1 <= k <= nums.length <= 105\n-231 <= nums[i] <= 231 - 1\n\n",
+        "accessible": true,
+        "slug": "sliding-window-median"
+    },
+    {
+        "id": "70",
+        "title": "Climbing Stairs",
+        "difficulty": "Easy",
+        "likes": 22741,
+        "dislikes": 917,
+        "tags": [
+            "Math",
+            "Dynamic Programming",
+            "Memoization"
+        ],
+        "description": "You are climbing a staircase. It takes n steps to reach the top.\nEach time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?\n\u00a0\nExample 1:\n\nInput: n = 2\nOutput: 2\nExplanation: There are two ways to climb to the top.\n1. 1 step + 1 step\n2. 2 steps\n\nExample 2:\n\nInput: n = 3\nOutput: 3\nExplanation: There are three ways to climb to the top.\n1. 1 step + 1 step + 1 step\n2. 1 step + 2 steps\n3. 2 steps + 1 step\n\n\u00a0\nConstraints:\n\n1 <= n <= 45\n\n",
+        "accessible": true,
+        "slug": "climbing-stairs"
+    },
+    {
+        "id": "198",
+        "title": "House Robber",
+        "difficulty": "Medium",
+        "likes": 21785,
+        "dislikes": 458,
+        "tags": [
+            "Array",
+            "Dynamic Programming"
+        ],
+        "description": "You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.\nGiven an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.\n\u00a0\nExample 1:\n\nInput: nums = [1,2,3,1]\nOutput: 4\nExplanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).\nTotal amount you can rob = 1 + 3 = 4.\n\nExample 2:\n\nInput: nums = [2,7,9,3,1]\nOutput: 12\nExplanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1).\nTotal amount you can rob = 2 + 9 + 1 = 12.\n\n\u00a0\nConstraints:\n\n1 <= nums.length <= 100\n0 <= nums[i] <= 400\n\n",
+        "accessible": true,
+        "slug": "house-robber"
+    },
+    {
+        "id": "300",
+        "title": "Longest Increasing Subsequence",
+        "difficulty": "Medium",
+        "likes": 21472,
+        "dislikes": 469,
+        "tags": [
+            "Array",
+            "Binary Search",
+            "Dynamic Programming"
+        ],
+        "description": "Given an integer array nums, return the length of the longest strictly increasing subsequence.\n\u00a0\nExample 1:\n\nInput: nums = [10,9,2,5,3,7,101,18]\nOutput: 4\nExplanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.\n\nExample 2:\n\nInput: nums = [0,1,0,3,2,3]\nOutput: 4\n\nExample 3:\n\nInput: nums = [7,7,7,7,7,7,7]\nOutput: 1\n\n\u00a0\nConstraints:\n\n1 <= nums.length <= 2500\n-104 <= nums[i] <= 104\n\n\u00a0\nFollow up:\u00a0Can you come up with an algorithm that runs in\u00a0O(n log(n)) time complexity?\n",
+        "accessible": true,
+        "slug": "longest-increasing-subsequence"
+    },
+    {
+        "id": "72",
+        "title": "Edit Distance",
+        "difficulty": "Medium",
+        "likes": 15334,
+        "dislikes": 254,
+        "tags": [
+            "String",
+            "Dynamic Programming"
+        ],
+        "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.\nYou have the following three operations permitted on a word:\n\nInsert a character\nDelete a character\nReplace a character\n\n\u00a0\nExample 1:\n\nInput: word1 = \"horse\", word2 = \"ros\"\nOutput: 3\nExplanation: \nhorse -> rorse (replace 'h' with 'r')\nrorse -> rose (remove 'r')\nrose -> ros (remove 'e')\n\nExample 2:\n\nInput: word1 = \"intention\", word2 = \"execution\"\nOutput: 5\nExplanation: \nintention -> inention (remove 't')\ninention -> enention (replace 'i' with 'e')\nenention -> exention (replace 'n' with 'x')\nexention -> exection (replace 'n' with 'c')\nexection -> execution (insert 'u')\n\n\u00a0\nConstraints:\n\n0 <= word1.length, word2.length <= 500\nword1 and word2 consist of lowercase English letters.\n\n",
+        "accessible": true,
+        "slug": "edit-distance"
+    },
+    {
+        "id": "322",
+        "title": "Coin Change",
+        "difficulty": "Medium",
+        "likes": 19539,
+        "dislikes": 490,
+        "tags": [
+            "Array",
+            "Dynamic Programming",
+            "Breadth-First Search"
+        ],
+        "description": "You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money.\nReturn the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.\nYou may assume that you have an infinite number of each kind of coin.\n\u00a0\nExample 1:\n\nInput: coins = [1,2,5], amount = 11\nOutput: 3\nExplanation: 11 = 5 + 5 + 1\n\nExample 2:\n\nInput: coins = [2], amount = 3\nOutput: -1\n\nExample 3:\n\nInput: coins = [1], amount = 0\nOutput: 0\n\n\u00a0\nConstraints:\n\n1 <= coins.length <= 12\n1 <= coins[i] <= 231 - 1\n0 <= amount <= 104\n\n",
+        "accessible": true,
+        "slug": "coin-change"
+    },
+    {
+        "id": "136",
+        "title": "Single Number",
+        "difficulty": "Easy",
+        "likes": 17138,
+        "dislikes": 777,
+        "tags": [
+            "Array",
+            "Bit Manipulation"
+        ],
+        "description": "Given a non-empty\u00a0array of integers nums, every element appears twice except for one. Find that single one.\nYou must\u00a0implement a solution with a linear runtime complexity and use\u00a0only constant\u00a0extra space.\n\u00a0\nExample 1:\n\nInput: nums = [2,2,1]\nOutput: 1\n\nExample 2:\n\nInput: nums = [4,1,2,1,2]\nOutput: 4\n\nExample 3:\n\nInput: nums = [1]\nOutput: 1\n\n\u00a0\nConstraints:\n\n1 <= nums.length <= 3 * 104\n-3 * 104 <= nums[i] <= 3 * 104\nEach element in the array appears twice except for one element which appears only once.\n\n",
+        "accessible": true,
+        "slug": "single-number"
+    },
+    {
+        "id": "190",
+        "title": "Reverse Bits",
+        "difficulty": "Easy",
+        "likes": 5280,
+        "dislikes": 1536,
+        "tags": [
+            "Divide and Conquer",
+            "Bit Manipulation"
+        ],
+        "description": "Reverse bits of a given 32 bits unsigned integer.\nNote:\n\nNote that in some languages, such as Java, there is no unsigned integer type. In this case, both input and output will be given as a signed integer type. They should not affect your implementation, as the integer's internal binary representation is the same, whether it is signed or unsigned.\nIn Java, the compiler represents the signed integers using 2's complement notation. Therefore, in Example 2 above, the input represents the signed integer -3 and the output represents the signed integer -1073741825.\n\n\u00a0\nExample 1:\n\nInput: n = 00000010100101000001111010011100\nOutput:    964176192 (00111001011110000010100101000000)\nExplanation: The input binary string 00000010100101000001111010011100 represents the unsigned integer 43261596, so return 964176192 which its binary representation is 00111001011110000010100101000000.\n\nExample 2:\n\nInput: n = 11111111111111111111111111111101\nOutput:   3221225471 (10111111111111111111111111111111)\nExplanation: The input binary string 11111111111111111111111111111101 represents the unsigned integer 4294967293, so return 3221225471 which its binary representation is 10111111111111111111111111111111.\n\n\u00a0\nConstraints:\n\nThe input must be a binary string of length 32\n\n\u00a0\nFollow up: If this function is called many times, how would you optimize it?\n",
+        "accessible": true,
+        "slug": "reverse-bits"
+    },
+    {
+        "id": "744",
+        "title": "Network Delay Time",
+        "difficulty": "Medium",
+        "likes": 7702,
+        "dislikes": 376,
+        "tags": [
+            "Depth-First Search",
+            "Breadth-First Search",
+            "Graph",
+            "Heap (Priority Queue)",
+            "Shortest Path"
+        ],
+        "description": "You are given a network of n nodes, labeled from 1 to n. You are also given times, a list of travel times as directed edges times[i] = (ui, vi, wi), where ui is the source node, vi is the target node, and wi is the time it takes for a signal to travel from source to target.\nWe will send a signal from a given node k. Return the minimum time it takes for all the n nodes to receive the signal. If it is impossible for all the n nodes to receive the signal, return -1.\n\u00a0\nExample 1:\n\n\nInput: times = [[2,1,1],[2,3,1],[3,4,1]], n = 4, k = 2\nOutput: 2\n\nExample 2:\n\nInput: times = [[1,2,1]], n = 2, k = 1\nOutput: 1\n\nExample 3:\n\nInput: times = [[1,2,1]], n = 2, k = 2\nOutput: -1\n\n\u00a0\nConstraints:\n\n1 <= k <= n <= 100\n1 <= times.length <= 6000\ntimes[i].length == 3\n1 <= ui, vi <= n\nui != vi\n0 <= wi <= 100\nAll the pairs (ui, vi) are unique. (i.e., no multiple edges.)\n\n",
+        "accessible": true,
+        "slug": "network-delay-time"
+    }
+]
