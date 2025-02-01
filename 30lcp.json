@@ -357,19 +357,21 @@
         "slug": "house-robber"
     },
     {
-        "id": "300",
-        "title": "Longest Increasing Subsequence",
+        "id": "96",
+        "title": "Unique Binary Search Trees",
         "difficulty": "Medium",
-        "likes": 21472,
-        "dislikes": 469,
+        "likes": 10560,
+        "dislikes": 421,
         "tags": [
-            "Array",
-            "Binary Search",
-            "Dynamic Programming"
+            "Math",
+            "Dynamic Programming",
+            "Tree",
+            "Binary Search Tree",
+            "Binary Tree"
         ],
-        "description": "Given an integer array nums, return the length of the longest strictly increasing subsequence.\n\u00a0\nExample 1:\n\nInput: nums = [10,9,2,5,3,7,101,18]\nOutput: 4\nExplanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.\n\nExample 2:\n\nInput: nums = [0,1,0,3,2,3]\nOutput: 4\n\nExample 3:\n\nInput: nums = [7,7,7,7,7,7,7]\nOutput: 1\n\n\u00a0\nConstraints:\n\n1 <= nums.length <= 2500\n-104 <= nums[i] <= 104\n\n\u00a0\n",
+        "description": "Given an integer n, return the number of structurally unique BST's (binary search trees) which has exactly n nodes of unique values from 1 to n.\n\u00a0\nExample 1:\n\n\nInput: n = 3\nOutput: 5\n\nExample 2:\n\nInput: n = 1\nOutput: 1\n\n\u00a0\nConstraints:\n\n1 <= n <= 19\n\n",
         "accessible": true,
-        "slug": "longest-increasing-subsequence"
+        "slug": "unique-binary-search-trees"
     },
     {
         "id": "72",
